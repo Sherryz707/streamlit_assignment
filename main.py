@@ -36,7 +36,7 @@ estimated_salary = st.number_input("Estimated Salary", min_value=0, value=50000)
 input_data = [gender_encoded, age, estimated_salary]
 
 # Prediction button
-if st.button("Predict"):
+if st.button("Predict!"):
     prediction = make_prediction(input_data)
     st.header("Prediction Result")
     if prediction == 1:
